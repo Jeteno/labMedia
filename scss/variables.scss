@@ -1,0 +1,100 @@
+$colorText: #000;
+$colorLine:  #f9f9f9;
+
+%fontFamily{
+   font-family: 'PT Root UI';
+   font-style: normal;
+}
+
+%subTitle{
+   @extend %fontFamily;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+   color: $colorText;
+}
+
+%h1Title{
+   @extend %fontFamily;
+   font-weight: 700;
+   font-size: 38px;
+   line-height: 50px;
+   color: $colorText;
+}
+
+%h2Title{
+   @extend %fontFamily;
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 40px;
+   color: $colorText;
+}
+
+%flexTop{
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   flex: 0 1 auto;
+}
+%flexCenter{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex: 0 1 auto;
+}
+
+%flexLeft{
+   display: flex;
+   align-items: center;
+   justify-content: left;
+   flex: 0 1 auto;
+   flex-wrap: wrap;      
+}
+
+%textLeft{
+   text-align: left;
+   margin-right: auto;
+}
+
+%lineConteiner{
+   height: 1px;
+   color: $colorLine;
+   opacity: 0.3;
+}
+
+%centerBlock{
+   margin-left: auto;
+   margin-right: auto;
+}
+
+%imgCenter{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+%padSubtitle{
+   @media screen and (max-width: 720px){
+      font-size: 14px;
+      line-height: 21px;
+   }
+}
+
+%PhonTitleh2{
+   @media screen and (max-width: 320px){
+      font-family: 'PT Root UI';
+      font-style: normal;
+      font-size: 22px;
+      line-height: 31px;
+   }
+}
+
+%PhonSubtitle{
+   @media screen and (max-width: 320px){
+      font-family: 'PT Root UI';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 17px;
+   }
+}

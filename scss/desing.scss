@@ -1,0 +1,113 @@
+
+.design {
+   .design__conteiner {
+      border-bottom: 1px solid #cdc7c7;
+      padding-bottom: 60px;
+      @media screen and (max-width: 320px){
+         padding-bottom: 0px;
+      }
+      .design__text {
+         @extend %flexCenter;
+         height: 134px;
+         @media screen and (max-width: 720px){
+            height: 120px;
+         }
+         @media screen and (max-width: 320px){
+            height: 81px;
+         }
+         .design__title {
+            @extend %h2Title;
+            @extend %PhonTitleh2;
+         }
+      }
+      .desing__body {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         grid-template-areas: 
+         "item-1 item-2 item-3 item-4";
+         @media screen and (max-width: 720px) {
+            display: grid;
+            grid-template-columns: repeat(2, 325px);
+            grid-template-areas: 
+            "item-1 item-2"
+            "item-3 item-4";
+         }
+         @media screen and (max-width: 320px){
+            margin-bottom: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "item-1 item-1"
+            "item-3 item-4"
+            "item-2 item-2";
+         }
+         .desing__cards {
+            &:not(:first-child){
+               margin-left: 20px;
+               @media screen and (max-width: 720px){
+                  margin-top: 50px;
+               }
+               @media screen and (max-width: 320px){
+                  margin-top: 40px;
+                  margin-left: 0px;
+               }
+            }
+            .desing__card {
+               .desing__card-images {         
+                  .desing__card-img {
+                     @extend %imgCenter;
+                  }
+                  .card__img-black{
+                     width: 100%;
+                  }
+               }
+               hr{
+                  color: #000;
+                  background-color:#000;
+                  opacity: 0.1;
+                  height: 1px;
+                  margin-top: 25px;
+               }
+               .desing__card-text {
+                  padding-top: 20px;
+                  .desing__card-subtitle {
+                     @extend %subTitle;
+                     @extend %textLeft;
+                     @extend %padSubtitle;
+                  }
+                  .card__subtitle-320{
+                     @extend %PhonSubtitle;
+                  }
+                  .subtitle-white {
+                     color: #fff;
+                     font-size: 14px;
+                     line-height: 21px;
+                  }
+               }
+            } 
+         }
+         .cards-black {
+            background: #171717;
+            border-radius: 5px;
+            padding: 20px 15px 24px;
+            height: 304px;
+            @media screen and (max-width: 720px){
+               height: 334px;
+            }
+         }
+         .cards__grid-1{
+            grid-area: item-1;
+         }
+         .cards__grid-2{
+            grid-area: item-2;
+         }
+         .cards__grid-3{
+            grid-area: item-3;
+         }
+         .cards__grid-4{
+            grid-area: item-4;
+         }
+         
+      }
+   }
+}

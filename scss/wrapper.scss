@@ -1,0 +1,21 @@
+.wrapper {
+   @extend %centerBlock;
+   width: 1000px;
+   @media screen and (max-width: 720px){
+      width: 720px;
+   }
+   @media screen and (max-width: 320px){
+      width: 320px;
+   }
+   ._conteiner {
+      @extend %centerBlock;
+      width: 950px;
+      @media screen and (max-width: 720px) {
+         width: 670px;
+      }
+      @media screen and (max-width: 320px) {
+         width: 290px;
+      }
+
+   }
+}

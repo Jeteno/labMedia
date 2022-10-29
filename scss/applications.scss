@@ -1,0 +1,73 @@
+.applications {
+   .applications__conteiner {
+      .applications__text {
+         @extend %flexCenter;
+         height: 130px;
+         @media screen and (max-width: 320px){
+            height: 112px;
+         }
+         .applications__title {
+            @extend %h2Title;
+            @extend %PhonTitleh2;
+         }
+      }
+      .applications__body{
+         @extend %flexTop;
+         justify-content: left;
+         flex-wrap: wrap;
+         @extend %subTitle;
+         @extend %PhonSubtitle;
+         .applications__icons {
+            width: 290px;
+            margin-bottom: 74px;
+            &:not(:last-child){
+               margin-right: 20px;
+            }
+            @media screen and (max-width: 320px) {
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               flex: 0 1 auto;
+               margin-bottom: 30px;
+               &:not(:first-child){
+                  border-top: 1px solid #cdc7c7;
+                  padding-top: 30px;
+               }
+            }
+            .applications__icon {
+               .icon__images {
+                  margin-bottom: 10px;
+                  .icon__img {
+                     @extend %imgCenter;
+                     @media screen and (max-width: 320px){
+                        margin-right: 10px;
+                     }
+                  }
+                  .rtl__img{
+                     @media screen and (max-width: 320px){
+                        margin-right: 0px;
+                     }
+                  }
+                  .icon__text {
+                     margin-top: 10px;
+                     @media screen and (max-width: 320px){
+                        width: 205px;
+                        
+                     }
+                     .icon__subtitle {
+                     }
+                  }
+               }
+               .icon {
+               }
+            }
+         } 
+         .rtl{
+            @media screen and (max-width: 320px){
+               direction: rtl;
+               text-align: left;
+            }
+         }
+      }
+   }
+}

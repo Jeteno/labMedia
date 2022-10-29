@@ -1,0 +1,17 @@
+.main-block {
+   .main-block__conteiner {
+      min-height: 130px;
+      border-bottom: 1px solid #cdc7c7;
+      @extend %flexCenter;
+      .main-block__text {
+         @extend %textLeft;
+         .main-block__title {
+            @extend %h1Title;
+            @media screen and (max-width: 320px){
+               font-size: 30px;
+               line-height: 40px;
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,749 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 24px;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: #fff;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.wrapper {
+  width: 1000px;
+}
+@media screen and (max-width: 720px) {
+  .wrapper {
+    width: 720px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .wrapper {
+    width: 320px;
+  }
+}
+.wrapper ._conteiner {
+  width: 950px;
+}
+@media screen and (max-width: 720px) {
+  .wrapper ._conteiner {
+    width: 670px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .wrapper ._conteiner {
+    width: 290px;
+  }
+}
+
+.applications .applications__conteiner .applications__text .applications__title, .accessorie .accessories__conteiner .accessories__text .accessories__title, .benefits .benefits__conteiner .benefits__text .benefits__title, .design .design__conteiner .design__text .design__title, .main-block .main-block__conteiner .main-block__text .main-block__title, .applications .applications__conteiner .applications__body, .accessorie .accessories__conteiner .accessories__body .accessories__cards .accessories__card .accessories__card-text .accessories__card-subtitle, .benefits .benefits__conteiner .benefits__body .benefits__points .benefits__point .point__text .point__subtitle, .design .design__conteiner .desing__body .desing__cards .desing__card .desing__card-text .desing__card-subtitle {
+  font-family: "PT Root UI";
+  font-style: normal;
+}
+
+.applications .applications__conteiner .applications__body, .accessorie .accessories__conteiner .accessories__body .accessories__cards .accessories__card .accessories__card-text .accessories__card-subtitle, .benefits .benefits__conteiner .benefits__body .benefits__points .benefits__point .point__text .point__subtitle, .design .design__conteiner .desing__body .desing__cards .desing__card .desing__card-text .desing__card-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+
+.main-block .main-block__conteiner .main-block__text .main-block__title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 50px;
+  color: #000;
+}
+
+.applications .applications__conteiner .applications__text .applications__title, .accessorie .accessories__conteiner .accessories__text .accessories__title, .benefits .benefits__conteiner .benefits__text .benefits__title, .design .design__conteiner .design__text .design__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000;
+}
+
+.applications .applications__conteiner .applications__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+.applications .applications__conteiner .applications__text, .accessorie .accessories__conteiner .accessories__text, .design .design__conteiner .design__text, .main-block .main-block__conteiner, .header .header__conteiner .header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+.title-mobile, .benefits .benefits__conteiner .benefits__body .benefits__points .benefits__point, .benefits .benefits__conteiner .benefits__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.accessorie .accessories__conteiner .accessories__body .accessories__cards .accessories__card .accessories__card-text .accessories__card-subtitle, .design .design__conteiner .desing__body .desing__cards .desing__card .desing__card-text .desing__card-subtitle, .main-block .main-block__conteiner .main-block__text, .header .header__conteiner .header__body .header__text {
+  text-align: left;
+  margin-right: auto;
+}
+
+.wrapper, .wrapper ._conteiner {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.applications .applications__conteiner .applications__body .applications__icons .applications__icon .icon__images .icon__img, .accessorie .accessories__conteiner .accessories__body .accessories__cards .accessories__card .accessories__card-images .accessories__card-img, .benefits .benefits__conteiner .benefits__body .benefits__points .benefits__point .point__icons .point__icon, .benefits .benefits__conteiner .benefits__body .benefits__points .benefits__point .point__icons, .design .design__conteiner .desing__body .desing__cards .desing__card .desing__card-images .desing__card-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 720px) {
+  .accessorie .accessories__conteiner .accessories__body .accessories__cards .accessories__card .accessories__card-text .accessories__card-subtitle, .design .design__conteiner .desing__body .desing__cards .desing__card .desing__card-text .desing__card-subtitle {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .applications .applications__conteiner .applications__text .applications__title, .benefits .benefits__conteiner .benefits__text .benefits__title, .design .design__conteiner .design__text .design__title {
+    font-family: "PT Root UI";
+    font-style: normal;
+    font-size: 22px;
+    line-height: 31px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .applications .applications__conteiner .applications__body, .accessorie .accessories__conteiner .accessories__body .accessories__cards .accessories__card .accessories__card-text .card__subtitle-320, .design .design__conteiner .desing__body .desing__cards .desing__card .desing__card-text .card__subtitle-320 {
+    font-family: "PT Root UI";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+
+.header {
+  min-height: 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #cdc7c7;
+}
+.header::after {
+  content: "";
+  display: block;
+  width: 207px;
+  height: 3px;
+  background-color: #D70E2A;
+  position: absolute;
+  top: 60px;
+}
+@media screen and (max-width: 720px) {
+  .header::after {
+    width: 149px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header::after {
+    display: none;
+  }
+}
+.header .header__conteiner .header__body .header__icons {
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .header__conteiner .header__body .header__icons .icon-e {
+  padding-right: 10px;
+}
+.header .header__conteiner .header__body .header__icons .icon-m {
+  padding-left: 10px;
+}
+.header .header__conteiner .header__body .header__text {
+  margin-left: 15px;
+}
+@media screen and (max-width: 320px) {
+  .header .header__conteiner .header__body .header__text {
+    display: none;
+  }
+}
+.header .header__conteiner .header__body .header__text .header__title {
+  font-family: "PT Root UI";
+  font-size: 14px;
+  line-height: 21px;
+  color: #000;
+  opacity: 0.7;
+}
+.header .header__conteiner .header__body .header__menu-burger {
+  position: relative;
+  z-index: 5;
+  display: block;
+  width: 24px;
+  height: 16px;
+  cursor: pointer;
+}
+.header .header__conteiner .header__body .header__menu-burger::before {
+  top: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background-color: #D70E2A;
+}
+.header .header__conteiner .header__body .header__menu-burger::after {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background-color: #D70E2A;
+}
+.header .header__conteiner .header__body .header__menu-burger .span {
+  top: 50%;
+  -webkit-transform: scale(1) translate(0px, -50%);
+          transform: scale(1) translate(0px, -50%);
+  left: 0;
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background-color: #D70E2A;
+}
+
+.main-block .main-block__conteiner {
+  min-height: 130px;
+  border-bottom: 1px solid #cdc7c7;
+}
+@media screen and (max-width: 320px) {
+  .main-block .main-block__conteiner .main-block__text .main-block__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.design .design__conteiner {
+  border-bottom: 1px solid #cdc7c7;
+  padding-bottom: 60px;
+}
+@media screen and (max-width: 320px) {
+  .design .design__conteiner {
+    padding-bottom: 0px;
+  }
+}
+.design .design__conteiner .design__text {
+  height: 134px;
+}
+@media screen and (max-width: 720px) {
+  .design .design__conteiner .design__text {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .design .design__conteiner .design__text {
+    height: 81px;
+  }
+}
+.design .design__conteiner .desing__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "item-1 item-2 item-3 item-4";
+}
+@media screen and (max-width: 720px) {
+  .design .design__conteiner .desing__body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (325px)[2];
+    grid-template-columns: repeat(2, 325px);
+        grid-template-areas: "item-1 item-2" "item-3 item-4";
+  }
+}
+@media screen and (max-width: 320px) {
+  .design .design__conteiner .desing__body {
+    margin-bottom: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "item-1 item-1" "item-3 item-4" "item-2 item-2";
+  }
+}
+.design .design__conteiner .desing__body .desing__cards:not(:first-child) {
+  margin-left: 20px;
+}
+@media screen and (max-width: 720px) {
+  .design .design__conteiner .desing__body .desing__cards:not(:first-child) {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .design .design__conteiner .desing__body .desing__cards:not(:first-child) {
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+}
+.design .design__conteiner .desing__body .desing__cards .desing__card .desing__card-images .card__img-black {
+  width: 100%;
+}
+.design .design__conteiner .desing__body .desing__cards .desing__card hr {
+  color: #000;
+  background-color: #000;
+  opacity: 0.1;
+  height: 1px;
+  margin-top: 25px;
+}
+.design .design__conteiner .desing__body .desing__cards .desing__card .desing__card-text {
+  padding-top: 20px;
+}
+.design .design__conteiner .desing__body .desing__cards .desing__card .desing__card-text .subtitle-white {
+  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+}
+.design .design__conteiner .desing__body .cards-black {
+  background: #171717;
+  border-radius: 5px;
+  padding: 20px 15px 24px;
+  height: 304px;
+}
+@media screen and (max-width: 720px) {
+  .design .design__conteiner .desing__body .cards-black {
+    height: 334px;
+  }
+}
+.design .design__conteiner .desing__body .cards__grid-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: item-1;
+}
+.design .design__conteiner .desing__body .cards__grid-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: item-2;
+}
+.design .design__conteiner .desing__body .cards__grid-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: item-3;
+}
+.design .design__conteiner .desing__body .cards__grid-4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: item-4;
+}
+@media screen and (max-width: 720px){
+  .design .design__conteiner .desing__body .cards__grid-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .design .design__conteiner .desing__body .cards__grid-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .design .design__conteiner .desing__body .cards__grid-3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .design .design__conteiner .desing__body .cards__grid-4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+}
+@media screen and (max-width: 320px){
+  .design .design__conteiner .desing__body .cards__grid-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .design .design__conteiner .desing__body .cards__grid-2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .design .design__conteiner .desing__body .cards__grid-3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .design .design__conteiner .desing__body .cards__grid-4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+}
+
+.benefits .benefits__conteiner {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 320px) {
+  .benefits .benefits__conteiner {
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+}
+.benefits .benefits__conteiner .benefits__text {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 320px) {
+  .benefits .benefits__conteiner .benefits__text {
+    margin-bottom: 30px;
+  }
+}
+.benefits .benefits__conteiner .benefits__body {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.benefits .benefits__conteiner .benefits__body .benefits__images .benefits__img {
+  width: 465px;
+  height: 248px;
+}
+@media screen and (max-width: 720px) {
+  .benefits .benefits__conteiner .benefits__body .benefits__images .benefits__img {
+    width: 325px;
+    height: 173px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .benefits .benefits__conteiner .benefits__body .benefits__images .benefits__img {
+    width: 100%;
+  }
+}
+.benefits .benefits__conteiner .benefits__body .benefits__points {
+  margin-left: 20px;
+}
+@media screen and (max-width: 320px) {
+  .benefits .benefits__conteiner .benefits__body .benefits__points {
+    margin-left: 0px;
+  }
+}
+.benefits .benefits__conteiner .benefits__body .benefits__points .benefits__point:not(:last-child) {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 320px) {
+  .benefits .benefits__conteiner .benefits__body .benefits__points .benefits__point:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .benefits .benefits__conteiner .benefits__body .benefits__points .benefits__point .point__icons {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+.benefits .benefits__conteiner .benefits__body .benefits__points .benefits__point .point__text {
+  width: 340px;
+}
+@media screen and (max-width: 720px) {
+  .benefits .benefits__conteiner .benefits__body .benefits__points .benefits__point .point__text {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .benefits .benefits__conteiner .benefits__body .benefits__points .benefits__point .point__text {
+    width: 290px;
+  }
+}
+.accessorie .accessories__conteiner {
+  margin-top: 50px;
+  border-bottom: 1px solid #cdc7c7;
+}
+@media screen and (max-width: 320px) {
+  .accessorie .accessories__conteiner {
+    margin-top: 35px;
+  }
+}
+.accessorie .accessories__conteiner .accessories__text {
+  height: 144px;
+}
+@media screen and (max-width: 320px) {
+  .accessorie .accessories__conteiner .accessories__text {
+    height: 40px;
+    margin-bottom: 30px;
+  }
+}
+.accessorie .accessories__conteiner .accessories__body {
+  margin-bottom: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "cards-1 cards-2 cards-3 cards-4";
+}
+@media screen and (max-width: 320px) {
+  .accessorie .accessories__conteiner .accessories__body {
+    margin-bottom: 10px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "cards-1 cards-1" "cards-2 cards-2" "cards-3 cards-4";
+  }
+}
+.accessorie .accessories__conteiner .accessories__body .accessories__cards:not(:last-child) {
+  margin-right: 20px;
+}
+@media screen and (max-width: 320px) {
+  .accessorie .accessories__conteiner .accessories__body .accessories__cards:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+.accessorie .accessories__conteiner .accessories__body .accessories__cards .accessories__card .accessories__card-images {
+  padding-bottom: 25px;
+}
+@media screen and (max-width: 320px) {
+  .accessorie .accessories__conteiner .accessories__body .accessories__cards .accessories__card .accessories__card-images {
+    padding-bottom: 0px;
+  }
+}
+.accessorie .accessories__conteiner .accessories__body .accessories__cards .accessories__card .accessories__card-images .accessories__card-img {
+  width: 100%;
+}
+.accessorie .accessories__conteiner .accessories__body .accessories__cards .accessories__card .accessories__card-text {
+  border-top: 1px solid #cdc7c7;
+  padding-top: 20px;
+  margin-top: 25px;
+}
+.accessorie .accessories__conteiner .accessories__body .accessories__cards .accessories__card .border-none {
+  border: none;
+  margin-top: 0px;
+}
+.accessorie .accessories__conteiner .accessories__body .accessories__grid-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: cards-1;
+}
+.accessorie .accessories__conteiner .accessories__body .accessories__grid-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: cards-2;
+}
+.accessorie .accessories__conteiner .accessories__body .accessories__grid-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: cards-3;
+}
+.accessorie .accessories__conteiner .accessories__body .accessories__grid-4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: cards-4;
+}
+@media screen and (max-width: 320px){
+  .accessorie .accessories__conteiner .accessories__body .accessories__grid-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .accessorie .accessories__conteiner .accessories__body .accessories__grid-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .accessorie .accessories__conteiner .accessories__body .accessories__grid-3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .accessorie .accessories__conteiner .accessories__body .accessories__grid-4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+}
+
+.applications .applications__conteiner .applications__text {
+  height: 130px;
+}
+@media screen and (max-width: 320px) {
+  .applications .applications__conteiner .applications__text {
+    height: 112px;
+  }
+}
+.applications .applications__conteiner .applications__body {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.applications .applications__conteiner .applications__body .applications__icons {
+  width: 290px;
+  margin-bottom: 74px;
+}
+.applications .applications__conteiner .applications__body .applications__icons:not(:last-child) {
+  margin-right: 20px;
+}
+@media screen and (max-width: 320px) {
+  .applications .applications__conteiner .applications__body .applications__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    margin-bottom: 30px;
+  }
+  .applications .applications__conteiner .applications__body .applications__icons:not(:first-child) {
+    border-top: 1px solid #cdc7c7;
+    padding-top: 30px;
+  }
+}
+.applications .applications__conteiner .applications__body .applications__icons .applications__icon .icon__images {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 320px) {
+  .applications .applications__conteiner .applications__body .applications__icons .applications__icon .icon__images .icon__img {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .applications .applications__conteiner .applications__body .applications__icons .applications__icon .icon__images .rtl__img {
+    margin-right: 0px;
+  }
+}
+.applications .applications__conteiner .applications__body .applications__icons .applications__icon .icon__images .icon__text {
+  margin-top: 10px;
+}
+@media screen and (max-width: 320px) {
+  .applications .applications__conteiner .applications__body .applications__icons .applications__icon .icon__images .icon__text {
+    width: 205px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .applications .applications__conteiner .applications__body .rtl {
+    direction: rtl;
+    text-align: left;
+  }
+}
+
+.title-mobile {
+  background: #EFEFEF;
+  height: 24px;
+  display: none;
+}
+@media screen and (max-width: 320px) {
+  .title-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.title-mobile .title-mobile__conteiner .title-mobile__title {
+  font-family: "PT Root UI";
+  font-size: 10px;
+  line-height: 14px;
+  color: #000000;
+  opacity: 0.7;
+}

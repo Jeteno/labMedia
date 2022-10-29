@@ -1,0 +1,93 @@
+.header {
+   min-height: 61px;
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid #cdc7c7;
+   &::after{
+      content: '';
+      display: block;
+      width: 207px;
+      height: 3px;
+      background-color: #D70E2A;
+      position: absolute;
+      top: 60px;
+      @media screen and (max-width: 720px){
+         width: 149px;
+      }
+      @media screen and (max-width: 320px){
+         display: none;
+      }
+      }
+   .header__conteiner {
+      .header__body {
+         @extend %flexCenter;
+         .header__icons {
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            .icon__img {
+            }
+            .icon-e {
+               padding-right: 10px;
+            }
+            .icon-m {
+               padding-left: 10px;
+            }
+         }
+         .icon {
+         }
+         .header__text {
+            margin-left: 15px;
+            @extend %textLeft;
+            @media screen and (max-width: 320px){
+               display: none;
+            }
+            .header__title {
+               font-family: 'PT Root UI';
+               font-size: 14px;
+               line-height: 21px;
+               color: $colorText;
+               opacity: 0.7;
+            }
+         }
+         .header__menu-burger {
+            position: relative;
+            z-index: 5;
+            display: block;
+            width: 24px;
+            height: 16px;
+            cursor: pointer;
+            &::before{
+               top: 0;
+               content: "";
+               left: 0;
+               position: absolute;
+               height: 10%;
+               width: 100%;
+               transition: all 0.3s ease 0s;
+               background-color: #D70E2A;
+            }
+            &::after{
+               bottom: 0;
+               content: "";
+               left: 0;
+               position: absolute;
+               height: 10%;
+               width: 100%;                  
+               transition: all 0.3s ease 0s;
+               background-color: #D70E2A;
+            }
+            .span {
+               top: 50%;
+               transform: scale(1) translate(0px, -50%);
+               left: 0;
+               position: absolute;
+               height: 10%;
+               width: 100%;
+               transition: all 0.3s ease 0s;
+               background-color: #D70E2A;
+            }
+         }
+      }
+   }
+}

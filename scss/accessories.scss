@@ -1,0 +1,85 @@
+.accessorie {
+   .accessories__conteiner {
+      margin-top: 50px;
+      border-bottom: 1px solid #cdc7c7;
+      @media screen and (max-width: 320px) {
+         margin-top: 35px;
+      }
+      .accessories__text {
+         @extend %flexCenter;
+         height: 144px;
+         @media screen and (max-width: 320px) {
+            height: 40px;
+            margin-bottom: 30px;
+         }
+         .accessories__title {
+            @extend %h2Title;
+         }
+      }
+      .accessories__body {
+         margin-bottom: 60px;
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         grid-template-areas: 
+         "cards-1 cards-2 cards-3 cards-4";
+         @media screen and (max-width: 320px) {
+            margin-bottom: 10px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "cards-1 cards-1"
+            "cards-2 cards-2"
+            "cards-3 cards-4";
+         }
+         .accessories__cards {
+            &:not(:last-child){
+               margin-right: 20px;
+               @media screen and (max-width: 320px) {
+                  margin-bottom: 40px;
+               }
+            }
+            .accessories__card {
+               .accessories__card-images {
+                  padding-bottom: 25px;
+                  @media screen and (max-width: 320px) {
+                     padding-bottom: 0px;
+                  }
+                  .accessories__card-img {
+                     @extend %imgCenter;
+                     width: 100%;
+                  }
+               }
+               .accessories__card-text {
+                  border-top: 1px solid #cdc7c7;
+                  padding-top: 20px;
+                  margin-top: 25px;
+                  .accessories__card-subtitle {
+                     @extend %subTitle;
+                     @extend %textLeft;   
+                     @extend %padSubtitle;
+                  }
+                  .card__subtitle-320{
+                     @extend %PhonSubtitle;
+                  }
+               }
+               .border-none{
+                  border: none;
+                  margin-top: 0px;
+               }
+            }
+         }
+         .accessories__grid-1{
+            grid-area: cards-1;
+         }
+         .accessories__grid-2{
+            grid-area: cards-2;
+         }
+         .accessories__grid-3{
+            grid-area: cards-3;
+         }
+         .accessories__grid-4{
+            grid-area: cards-4;
+         }
+      }
+   }
+}
